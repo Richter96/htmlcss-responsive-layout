@@ -329,12 +329,16 @@ ul li {
 
 .about_as h2 {
     color: var(--primary-);
-    margin: 2rem 0;
     font-size: 2.5rem;
+}
+.about_as .text h2{
+    color: var(--primary-);
+    margin: 2rem 0;
+    font-size: 1.5rem;
 }
 
 .about_as p {
-    margin: 2rem 0;
+    margin: 2rem;
     color: var(--primary-);
 }
 
@@ -413,6 +417,10 @@ ul li {
     padding: 2rem;
     color: white;
 }
+#app_footer a {
+    color: var(--lightpurple-);
+}
+
 
 
 /* #endregion footer */
