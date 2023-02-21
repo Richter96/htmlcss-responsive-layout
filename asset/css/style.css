@@ -1,7 +1,5 @@
 /* #region debug */
-    {
-    border: 1px dotted black;
-}
+
 
 .debug .m_left,
 .debug .m_right {
@@ -17,7 +15,7 @@
 
 
 .debug .start,
-.about_as [class^="col_"] {
+.debug .about_as [class^="col_"] {
     height: auto;
     border: 1px solid black;
 }
@@ -58,6 +56,12 @@ body {
 
 }
 
+.benefits,
+.plan,
+.start {
+    background-color: var(--primary-);
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -81,9 +85,11 @@ img {
     border-radius: 3rem;
     padding: 0.5rem 1rem;
     border: none;
+    text-decoration: none;
 }
 
 .demo .card h2 {
+    font-size: 1.5rem;
     padding: 1rem 0;
     color: var(--secondary-);
 }
@@ -199,7 +205,7 @@ ul li {
 
 /* enddemo */
 .plan h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .plan h2:first-child {
@@ -222,6 +228,10 @@ ul li {
 }
 
 /* endplan */
+
+.box_12 {
+    width: calc(100% /12 * 12);
+}
 
 .testimonials .card {
     background-color: var(--primary-);
@@ -274,7 +284,7 @@ ul li {
 
 .testimonials h2 {
     color: var(--primary-);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
 }
 
@@ -282,25 +292,71 @@ ul li {
 .benefits h2 {
     color: var(--white-);
     text-align: center;
+    font-size: 2.5rem;
+}
+.benefits .card {
+    background-color: var(--white-);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
 }
 
+.benefits span, .benefits h3 {
+    color: var(--primary-);
+}
+
+.benefits span{
+    font-size: 5rem;
+}
+.benefits .btn {
+    background-color: var(--primary-);
+    color: var(--white-);
+    padding: 0.5rem 2rem;
+}
+
+.benefits p {
+    margin-bottom: 2rem;
+}
+.img_benefits {
+    position: relative;
+}
 
 /* endbenefits */
 
-.benefits,
-.plan,
-.start {
-    background-color: var(--primary-);
-}
-
-.box_12 {
-    width: calc(100% /12 * 12);
-}
-
 .about_as img {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
 }
+
+.about_as h2 {
+    color: var(--primary-);
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.about_as p {
+    margin: 2rem 0;
+    color: var(--primary-);
+}
+
+.about_as .btn {
+    background-color: var(--primary-);
+    color: var(--white-);
+}
+
+.about_as .fa-quote-left {
+    color: var(--primary-);
+    position: absolute;
+    font-size: 4rem;
+    top: -5%;
+    left: 37%;
+    }
+.about_as .fa-linkedin-in {
+    background-color: var(--white-);
+    color: var(--primary-);
+    margin-right: 0.5rem;
+    padding: 0 0.2rem;
+}
+/* endabout_as */
 
 .start {
     text-align: center;
@@ -403,7 +459,13 @@ ul li {
         text-align: left;
     }
     .testimonials h2 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .plan h2 {
+        font-size: 3rem;
+    }
+    .about_as h2 {
+        font-size: 3rem;
     }
 }
 
@@ -465,6 +527,18 @@ ul li {
     }
 
     .testimonials h2 {
+        font-size: 3rem;
+    }
+
+    .demo .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .plan h2 {
+        font-size: 3rem;
+    }
+
+    .about_as h2 {
         font-size: 3rem;
     }
 
