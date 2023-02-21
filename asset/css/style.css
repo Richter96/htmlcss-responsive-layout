@@ -259,36 +259,33 @@ ul li {
 
 .testimonials span {
     padding: 1rem 2rem;
+    font-size: 1rem;
 }
 
-.testimonials p {
+.title p{
+    padding: 1rem 2rem;
+    color: var(--black_footer-);
+}
+
+.testimonial p {
     padding: 1rem 2rem;
     color: var(--white-);
 }
 
 .testimonials h2 {
     color: var(--primary-);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* endtestimonials */
+.benefits h2 {
+    color: var(--white-);
+    text-align: center;
 }
 
 
-/* .img_test img {
-    width: auto;
-    height: 100%;
-    margin-left: -25%;
-    max-width: none;
-}
-
-.img_test {
-    display: inline-block;
-    position: relative;
-    width: 100px;
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 50%;
-} */
-
-
-/* endtestimonial */
+/* endbenefits */
 
 .benefits,
 .plan,
@@ -401,6 +398,13 @@ ul li {
         display: flex;
         flex-direction: row;
     }
+
+    .text_testimonial {
+        text-align: left;
+    }
+    .testimonials h2 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width:1168px) {
@@ -456,21 +460,12 @@ ul li {
         flex-direction: row;
     }
 
-
-    /* .text{
-        width: 60%;
+    .text_testimonial {
+        text-align: left;
     }
 
-    .pic {
-        position: relative;
-        width: 40%;
+    .testimonials h2 {
+        font-size: 3rem;
     }
-    .app img {
-        width: 70%;
-    }
-    .pic img {
-        position: absolute;
-        bottom: 0;
-        left: 15%;
-    } */
+
 }
