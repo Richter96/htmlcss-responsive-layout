@@ -78,12 +78,13 @@ img {
     padding: 0.5rem 1rem;
     border: none;
 }
-.card h2 {
+.demo .card h2 {
     padding: 1rem 0;
     color: var(--secondary-);
 }
-.card p {
+.card p{
     padding: 1rem 0 2rem;
+    line-height: 1.8;
 }
 
 [class^="col_"] {
@@ -181,9 +182,32 @@ ul li {
     display: flex;
 }
 
-.fa-file-code {
+.demo .fa-solid {
     color: var(--secondary-);
+    font-size: 6rem;
 }
+/* enddemo */
+.plan h2 {
+    font-size: 2rem;
+}
+.plan h2:first-child {
+    color: var(--white-);
+}
+.plan .card {
+    background-color: var(--white-);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.plan a {
+    border-radius: 50%;
+    color: var(--black_footer-);
+    padding: 1rem;
+    background-color: var(--primary-);
+}
+/* endplan */
 
 .benefits,
 .plan,
@@ -297,8 +321,11 @@ ul li {
         max-width: 1152px;
         margin: auto;
     }
+    .col_lg_8 {
+        width: calc(100% / 12 * 8);
+    }
 
-    .col_6 {
+    .col_lg_6 {
         width: calc(100% / 12 * 6);
     }
 
@@ -315,6 +342,20 @@ ul li {
     .card.app {
         display: flex;
     }
+
+    .plan .card img {
+        width: 50%;
+    }
+    .plan .card {
+        height: auto;
+    }
+    .plan .row {
+        align-items: flex-end;
+    }
+    .plan p {
+        line-height: 1.8;
+    }
+    
 
     /* .text{
         width: 60%;
