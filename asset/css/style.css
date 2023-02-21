@@ -1,27 +1,26 @@
 /* #region debug */
-.debug .container,
-.logo,
-.menu {
-    border: 1px solid black;
+* {
+    border: 1px dotted black;
 }
 
-.debug .logo,
-.menu {
+.debug .m_left,
+.debug .m_right {
     height: 3rem;
     width: 40%;
 }
 
 .debug [class^="col_"],
-.box_12 {
+.debug .box_12 {
     height: 150px;
     border: 1px solid black;
 }
 
-.card {
+.debug .card {
     height: 100%;
 }
 
-.debug .start, .about_as [class^="col_"] {
+.debug .start,
+.about_as [class^="col_"] {
     height: auto;
     border: 1px solid black;
 }
@@ -57,8 +56,8 @@ body {
     --secondary-: rgba(0, 132, 253, 1);
     --black_footer-: rgba(51, 51, 51, 1);
     --lightblu-: #b5ddff;
-    --lightpurple-:#d2d0f3;
-    --free-:#fdc15f;
+    --lightpurple-: #d2d0f3;
+    --free-: #fdc15f;
 
 }
 
@@ -71,28 +70,92 @@ body {
     padding: 2rem 0;
 }
 
+img {
+    max-width: 100%;
+}
+
+.btn {
+    background-color: var(--white-);
+    color: var(--primary-);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+}
+
 /* #endregion utility */
 
 
 /* #region header */
 #app_header {
     background-color: var(--secondary-);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 5;
 }
 
 #app_header .d-flex {
     justify-content: space-between;
 }
 
+.m_left,
+.m_right {
+    display: flex;
+    align-items: center;
+}
+
+.md.sd {
+    display: flex;
+    align-items: center;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    filter: invert(1);
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem;
+    line-height: 40px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu {
+    transition: 3s linear;
+}
+
+.fa-solid:hover .menu {
+    display: flex;
+}
+
+
 /* #endregion header */
 
 /* #region main */
+#app_main {
+    margin-top: 50px;
+}
+
 .col_12 {
     width: calc(100% /12 * 12);
 }
 
 .demo .card {
     background-color: var(--lightblu-);
+    margin: 1rem;
+    border-radius: 4px;
+    text-align: center;
 }
+
+.app img{
+    width: 50%;
+}
+
 
 .benefits,
 .plan,
@@ -114,13 +177,10 @@ body {
 }
 
 .btn_started {
-    background-color: var(--white-);
-    color: var(--primary-);
-    border-radius: 3rem;
     padding: 1rem 3rem;
 }
 
-.start h3{
+.start h3 {
     font-size: 2.5rem;
 }
 
@@ -128,20 +188,25 @@ body {
     font-size: 1.5rem;
     color: var(--lightpurple-);
 }
+
 .start {
     color: var(--white-);
 }
 
-.copy li{
+.copy li {
     display: inline-block;
     color: var(--white-);
     padding: 2rem;
 }
 
 
-.start span {
+.start h2 {
     font-size: 3rem;
     color: var(--free-);
+}
+
+.start a {
+    text-decoration: none;
 }
 
 
@@ -157,6 +222,11 @@ body {
     text-align: center;
     padding: 2rem;
     color: white;
+}
+
+.fa-circle {
+    font-size: 0.3rem;
+    text-align: center;
 }
 
 
@@ -180,6 +250,12 @@ body {
     #app_footer .container {
         max-width: 50%;
     }
+
+    .card.app {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width:1168px) {
@@ -192,4 +268,10 @@ body {
         width: calc(100% / 12 * 4);
     }
 
+    .fa-bars {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
 }

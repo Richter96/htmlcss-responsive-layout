@@ -10,12 +10,28 @@
     <title>RESPONSIV LAYOUT</title>
 </head>
 
-<body class="debug">
+<body class="">
     <header id="app_header">
-        <div class="container d-flex">
-            <div class="logo"></div>
-            <nav class="menu"></nav>
-        </div>
+        <nav>
+            <div class="container d-flex">
+                <div class="m_left">
+                    <img src="./asset/img/logo.png" alt="logo">
+                </div>
+                <div class="m_right">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="menu">
+                        <ul>
+                            <li>Planning</li>
+                            <li>Testimonials</li>
+                            <li>Features</li>
+                            <li>About Us</li>
+                            <li><a class="btn"href="#">Get Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
     </header>
     <!-- /#app_header -->
     <main id="app_main">
@@ -23,10 +39,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col_12 col_8">
-                        <div class="card"></div>
+                        <div class="card app">
+                            <div class="text">
+                                <h2>Get a demo application</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum officiis perspiciatis optio, ipsum facere, aut corrupti iusto nobis quis odio similique tempora.</p>
+                                <a href="#"><i class="fa-brands fa-apple"></i>App Store</a>
+                            </div>
+                            <div class="pic">
+                                <img src="./asset/img/phone.png" alt="phone">
+                            </div>
+                        </div>
                     </div>
                     <div class="col_12 col_4">
-                        <div class="card"></div>
+                        <div class="card">
+                            <i class="fa-solid fa-file-code"></i>
+                            <h2>Clear Code</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat officia aliquid, voluptatum qui magnam fugiat. Quidem aut, ab cupiditate inventore ipsam amet vitae? Illum dolores tempora commodi ad consequuntur provident.</p>
+                        </div>
                     </div>
                     <div class="col_12 col_4">
                         <div class="card"></div>
@@ -112,17 +141,17 @@
         </section>
         <section class="start">
             <div class="container">
-                <h5 class="">GET STARTED</h5>
+                <span class="">GET STARTED</span>
                 <h3 class="pb-2">Simple, Transparent Pricing</h3>
-                <span class="pb-2"><strong>I'ts Free!</strong> </span>
+                <h2 class="pb-2"><strong>I'ts Free!</strong> </h2>
                 <p class="pb-2">
                     We're still in beta and we will be for awhile.
                     As we add more functionality, we'll look into other plans with more controls.
                 </p>
-                <a class="btn_started pb-2"  href="#">Get Started</a>
+                <a class="btn btn_started pb-2"  href="#">Get Started</a>
                 <p class="copy pb-2">
-                    Copyright © Boolean 2023 <i class="fa-solid fa-circle-dot"></i>
-                    Classe 91 <i class="fa-solid fa-circle-dot"></i>
+                    Copyright © Boolean 2023 <i class="fa-solid fa-circle"></i>
+                    Classe 91 <i class="fa-solid fa-circle"></i>
                     <a href="#">Privacy policy</a>
                 </p>
             </div>
