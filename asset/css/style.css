@@ -1,5 +1,5 @@
 /* #region debug */
- {
+    {
     border: 1px dotted black;
 }
 
@@ -78,11 +78,13 @@ img {
     padding: 0.5rem 1rem;
     border: none;
 }
+
 .demo .card h2 {
     padding: 1rem 0;
     color: var(--secondary-);
 }
-.card p{
+
+.card p {
     padding: 1rem 0 2rem;
     line-height: 1.8;
 }
@@ -90,6 +92,7 @@ img {
 [class^="col_"] {
     padding: 1rem;
 }
+
 /* #endregion utility */
 
 
@@ -172,12 +175,15 @@ ul li {
     color: var(--white-);
     font-size: 1.5rem;
 }
+
 .demo .row {
     margin: 0 -2rem 2rem -2rem;
 }
-.text{
+
+.text {
     margin-bottom: 2rem;
 }
+
 .pic {
     display: flex;
 }
@@ -186,13 +192,16 @@ ul li {
     color: var(--secondary-);
     font-size: 6rem;
 }
+
 /* enddemo */
 .plan h2 {
     font-size: 2rem;
 }
+
 .plan h2:first-child {
     color: var(--white-);
 }
+
 .plan .card {
     background-color: var(--white-);
     text-align: center;
@@ -207,7 +216,38 @@ ul li {
     padding: 1rem;
     background-color: var(--primary-);
 }
+
 /* endplan */
+
+.testimonials .card {
+    background-color: var(--primary-);
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.testimonials img {
+ border-radius: 50%;
+}
+
+.img_test img {
+    width: auto;
+    height: 100%;
+    margin-left: -25%;
+    max-width: none;
+}
+
+.img_test {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.testimonials h2 {
+    color: var(--primary-);
+}
+
+/* endtestimonial */
 
 .benefits,
 .plan,
@@ -286,7 +326,7 @@ ul li {
 
 
 
-@media screen and (min-width:768px) and (max-width:1168px){
+@media screen and (min-width:768px) and (max-width:1168px) {
     .col_8 {
         width: calc(100% / 12 * 8);
     }
@@ -310,6 +350,7 @@ ul li {
         justify-content: flex-start;
         flex-wrap: wrap;
     }
+
     .app img {
         width: 50%;
     }
@@ -321,6 +362,7 @@ ul li {
         max-width: 1152px;
         margin: auto;
     }
+
     .col_lg_8 {
         width: calc(100% / 12 * 8);
     }
@@ -336,9 +378,11 @@ ul li {
     .fa-bars {
         display: none;
     }
+
     .menu {
         display: flex;
     }
+
     .card.app {
         display: flex;
     }
@@ -346,16 +390,19 @@ ul li {
     .plan .card img {
         width: 50%;
     }
+
     .plan .card {
         height: auto;
     }
+
     .plan .row {
         align-items: flex-end;
     }
+
     .plan p {
         line-height: 1.8;
     }
-    
+
 
     /* .text{
         width: 60%;
