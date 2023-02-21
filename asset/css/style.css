@@ -1,5 +1,5 @@
 /* #region debug */
-* {
+ {
     border: 1px dotted black;
 }
 
@@ -15,9 +15,6 @@
     border: 1px solid black;
 }
 
-.debug .card {
-    height: 100%;
-}
 
 .debug .start,
 .about_as [class^="col_"] {
@@ -79,8 +76,15 @@ img {
     color: var(--primary-);
     border-radius: 3rem;
     padding: 0.5rem 1rem;
+    border: none;
 }
-
+.card h2 {
+    padding: 1rem 0;
+    color: var(--secondary-);
+}
+.card p {
+    padding: 1rem 0 2rem;
+}
 /* #endregion utility */
 
 
@@ -148,14 +152,31 @@ ul li {
 .demo .card {
     background-color: var(--lightblu-);
     margin: 1rem;
-    border-radius: 4px;
+    border-radius: 2rem;
     text-align: center;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.card {
+    height: 100%;
 }
 
 .app img{
-    width: 50%;
+    width: 90%;
 }
-
+.app a {
+    padding: 0.5rem 3rem;
+    background-color: var(--secondary-);
+    text-decoration: none;
+    color: var(--white-);
+    font-size: 1.5rem;
+}
+.text{
+    margin-bottom: 2rem;
+}
+.pic {
+    display: flex;
+}
 
 .benefits,
 .plan,
@@ -252,9 +273,7 @@ ul li {
     }
 
     .card.app {
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
+        text-align: left;
     }
 }
 
@@ -274,4 +293,24 @@ ul li {
     .menu {
         display: flex;
     }
+    .card.app {
+        display: flex;
+    }
+
+    /* .text{
+        width: 60%;
+    }
+
+    .pic {
+        position: relative;
+        width: 40%;
+    }
+    .app img {
+        width: 70%;
+    }
+    .pic img {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+    } */
 }
