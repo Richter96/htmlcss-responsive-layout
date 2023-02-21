@@ -85,6 +85,10 @@ img {
 .card p {
     padding: 1rem 0 2rem;
 }
+
+[class^="col_"] {
+    padding: 1rem;
+}
 /* #endregion utility */
 
 
@@ -151,7 +155,6 @@ ul li {
 
 .demo .card {
     background-color: var(--lightblu-);
-    margin: 1rem;
     border-radius: 2rem;
     text-align: center;
     padding: 2rem 2rem 0 2rem;
@@ -161,9 +164,6 @@ ul li {
     height: 100%;
 }
 
-.app img{
-    width: 90%;
-}
 .app a {
     padding: 0.5rem 3rem;
     background-color: var(--secondary-);
@@ -171,11 +171,18 @@ ul li {
     color: var(--white-);
     font-size: 1.5rem;
 }
+.demo .row {
+    margin: 0 -2rem 2rem -2rem;
+}
 .text{
     margin-bottom: 2rem;
 }
 .pic {
     display: flex;
+}
+
+.fa-file-code {
+    color: var(--secondary-);
 }
 
 .benefits,
@@ -255,7 +262,7 @@ ul li {
 
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1168px){
     .col_8 {
         width: calc(100% / 12 * 8);
     }
@@ -274,10 +281,22 @@ ul li {
 
     .card.app {
         text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .app img {
+        width: 50%;
     }
 }
 
 @media screen and (min-width:1168px) {
+    .container {
+        width: 80%;
+        max-width: 1152px;
+        margin: auto;
+    }
 
     .col_6 {
         width: calc(100% / 12 * 6);
